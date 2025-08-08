@@ -23,12 +23,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-)re01dmod-#c%jj(c)1@g8cj#u@8p4gq7g3mesvdf%5frh_v&7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # product_portal/settings.py
 
-ALLOWED_HOSTS = ['day8pro2.onrender.com', 'localhost', '127.0.0.1']
-
+ALLOWED_HOSTS = [
+    'day8pro2.onrender.com',  # Your deployed domain
+    'localhost',
+    '127.0.0.1',
+]
 
 # Application definition
 
@@ -122,5 +125,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 
 
